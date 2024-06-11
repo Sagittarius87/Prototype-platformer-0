@@ -19,10 +19,13 @@ export class GameOver extends Scene
             align: 'center'
         }).setOrigin(0.5);
 
+        /*
         this.input.once('pointerdown', () => {
 
             this.scene.start('MainMenu');
 
         });
+        */
+        console.log('GameOver');
     }
 }
