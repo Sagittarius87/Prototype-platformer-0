@@ -34,6 +34,9 @@ export class Preloader extends Scene
 
         this.load.image('backgroundLevel', 'backgroundLevel.png');
         this.load.image('backgroundMenu', 'backgroundMenu.png');
+        this.load.image('buttonImage', 'button1.png');
+        this.load.image('buttonImageMove', 'button2.png');
+        this.load.image('buttonImageClick', 'button3.png');
         this.load.image('player', 'tile_0145.png');
         this.load.image('tileset', 'tilemap.png');
     }
