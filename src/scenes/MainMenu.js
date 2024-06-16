@@ -20,6 +20,9 @@ export class MainMenu extends Scene
         //this.add.existing(button);
         const buttonNewGame = new ButtonNewGame(this, 128, 112);
         this.add.existing(buttonNewGame);
+        buttonNewGame.setInteractive().on(Phaser.Input.Events.GAMEOBJECT_POINTER_UP, () => {
+            this.scene.start('Game');
+        });
         const buttonContinueGame = new ButtonContinueGame(this, 128, 112 + 32);
         this.add.existing(buttonContinueGame);
         const buttonGameSettings = new ButtonGameSettings(this, 128, 112 + 64);
