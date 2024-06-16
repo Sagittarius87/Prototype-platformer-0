@@ -43,6 +43,12 @@ export class MainMenuButtons extends Phaser.GameObjects.Container
                 this.buttonImageMove.setVisible(false);
                 this.buttonImageClick.setVisible(true);
                 console.log('Phaser.Input.Events.GAMEOBJECT_POINTER_DOWN');
+            })
+            .on(Phaser.Input.Events.GAMEOBJECT_POINTER_UP, () => {
+                this.buttonImage.setVisible(false);
+                this.buttonImageMove.setVisible(true);
+                this.buttonImageClick.setVisible(false);
+                console.log('Phaser.Input.Events.GAMEOBJECT_POINTER_UP');
             });
     }
 }
